@@ -1,0 +1,84 @@
+.login {
+    height: 100vh;
+    h4 {
+        max-width: 400px;
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+}
+.tab_button {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    button {
+        width: 192px;
+        height: 48px;
+        background: transparent;
+        border-radius: 6px;
+        border: 1px solid var(--main);
+        color: var(--main);
+        font-weight: 600;
+        transition: .3s;
+        &.active {
+            background: var(--main);
+            color: #fff;
+        }
+    }
+}
+.form {
+    width: 400px;
+    a {
+        color: #fff;
+        text-decoration: none;
+        span {
+            color: var(--main);
+            font-weight: 600;
+        }
+    }
+}
+.button_submit {
+    width: 100%;
+    height: 48px;
+    background: var(--main);
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+}
+.input_box {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1.5rem;
+    label {
+        color: #fff;
+        margin-bottom: .5rem;
+    }
+    svg {
+        color: #c3c3c3;
+        position: absolute;
+        bottom: .75rem;
+        left: .75rem;
+        font-size: 1.5rem;
+    }
+    svg:nth-child(3) {
+        left: auto;
+        right: .75rem;
+    }
+    input {
+        height: 48px;
+        padding: 0 52px;
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid var(--gray-1);
+        background: var(--gray-1);
+        color: #fff;
+        transition: .3s;
+        &:focus {
+            border: 1px solid var(--main);
+            outline: none;
+        }
+    }
+}

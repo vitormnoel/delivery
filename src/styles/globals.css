@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #24252A !important;
+}
+:root {
+  --main: #EC2734;
+  --secondary: #FF7E00;
+  --gray: #24252A;
+  --gray-1: #3C3D45;
+  --gray-2: #656776;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:focus, input:-webkit-autofill:hover {
+  -webkit-box-shadow: inset 0 0 0 30px var(--gray-1) !important;
+  color: #fff !important;
+}
+input:-internal-autofill-selected, input:-webkit-autofill-selected {
+  appearance: unset !important;
+  background-image: none !important;
+  background-color: var(--gray-1) !important;
+  color: #fff !important;
+}
+* {
+  box-sizing: border-box;
+}
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    background: #333;
+    border-radius: 50%;
+}
+.swiper .swiper-button-next {
+  right: -48px;
+}
+.swiper .swiper-button-prev {
+  left: -48px;
+}
+.swiper .swiper-button-next::after, .swiper .swiper-button-prev::after {
+  color: var(--secondary);
+  font-size: 24px;
+}
+
+@media (max-width: 720px) {
+  .swiper-button-prev, .swiper-button-next {
+    display: none !important;
+  }
+}

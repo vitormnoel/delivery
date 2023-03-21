@@ -1,0 +1,99 @@
+.header {
+    height: 100px;
+    background: transparent !important;
+}
+.navbar {
+    height: 100px;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    background: #24252a77 !important;
+    backdrop-filter: blur(24px);
+    ul {
+        margin: 0;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        margin-right: 3rem;
+        color: #c3c3c3;
+        text-decoration: none;
+    }
+    .link_active {
+        color: #fff;
+        font-weight: 600;
+    }
+}
+.btn {
+    color: #fff !important;
+    font-weight: 600;
+    width: 200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main);
+    border-radius: 6px;
+    margin-right: 0 !important;
+}
+.input_box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    svg {
+        position: absolute;
+        color: #24252A;
+        left: 8px;
+    }
+    input {
+        width: 500px;
+        height: 48px;
+        border-radius: 6px;
+        border: 0;
+        background: #3c3d45;
+        padding: 0 .75rem;
+        padding-left: 2rem;
+        color: #fff;
+        &:focus {
+            outline: 0;
+            border: 1px solid var(--secondary);
+        }
+    }
+}
+.btn_sign {
+    border: 0;
+    background: transparent;
+    svg {
+        font-size: 1.5rem;
+        color: var(--main);
+    }
+}
+.button_collapse {
+    border: 0;
+    background: transparent;
+}
+@media (max-width: 720px) {
+    .navbar, .header {
+        position: relative;
+        height: 80px;
+    }
+    .button_collapse {
+        display: flex;
+        align-items: center;
+        font-size: .875rem;
+        color: #fff;
+        svg {
+            margin-left: .25rem;
+        }
+    }
+    .logo {
+        height: 32px !important;
+        img {
+            height: 100% !important;
+        }
+    }
+}

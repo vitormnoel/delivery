@@ -1,0 +1,13 @@
+.footer {
+    padding: 1.5rem 0;
+    background: #222222;
+    span {
+        color: #fff;
+        text-align: center;
+    }
+}
+@media (max-width: 720px) {
+    .footer {
+        display: none;
+    }
+}

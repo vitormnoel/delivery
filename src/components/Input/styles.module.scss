@@ -1,0 +1,25 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    label {
+        color: #fff;
+        margin-bottom: .5rem;
+    }
+    input {
+        height: 48px;
+        border: 0;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 .75rem;
+        background: var(--gray-1);
+        color: #fff;
+        &:focus {
+            border: 1px solid var(--secondary);
+            outline: 0;
+        }
+    }
+}

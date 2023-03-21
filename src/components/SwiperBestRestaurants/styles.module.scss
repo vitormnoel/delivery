@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    padding-bottom: 80px;
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+    .card {
+        background: #fafafa;
+        width: 248px;
+        height: 124px;
+        padding: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 0.5rem;
+        position: relative;
+        .avatar {
+            width: 64px;
+            height: 64px;
+            background: #24252a;
+            border-radius: 50%;
+        }
+        .content_card {
+            h4 {
+                font-size: 1rem;
+                color: #333;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+            span {
+                font-size: 0.875rem;
+                color: #333;
+            }
+        }
+        svg {
+            color: #FFD600;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+        }
+    }
+}
+#swiper {
+    position: unset !important;
+}
+
+@media (max-width: 720px) {
+    .container {
+        h3 {
+            font-size: 1.5rem !important;
+        }
+    }
+}
